@@ -179,3 +179,35 @@ footer {
   section { padding: 3rem 2rem; }
   section:hover { transform: translateY(-8px); }
 }
+
+/* Enlaces de proyectos sin subrayado, pero con estilo */
+.project-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #60a5fa;
+}
+
+/* Botón elegante */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  background: transparent;
+  color: #60a5fa;
+  border: 2px solid #60a5fa;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background: #60a5fa;
+  color: #0f172a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(96, 165, 250, 0.3);
+}
