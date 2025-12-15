@@ -6,74 +6,77 @@
   <title>Proyecto 2 – Portafolio</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Model Viewer oficial de Google -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
   <style>
+    /* Estilos específicos solo para las páginas de proyecto */
     .project-container {
       display: flex;
-      gap: 4rem;
+      gap: 3rem;
       margin-top: 140px;
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
       padding: 0 2rem;
       flex-wrap: wrap;
-      align-items: flex-start;
     }
 
-    .project-info { flex: 3; min-width: 320px; }
-    .project-info h1 { font-size: 3rem; margin-bottom: 2rem; color: #f8fafc; }
+    .project-info {
+      flex: 3;
+      min-width: 300px;
+    }
+
+    .project-info h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: #f8fafc;
+    }
 
     .project-info .meta {
       display: grid;
       grid-template-columns: max-content 1fr;
-      gap: 0.8rem 2rem;
-      margin: 2.5rem 0;
+      gap: 0.8rem 1.5rem;
+      margin: 2rem 0;
       color: #94a3b8;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
-    .project-info .meta strong { color: #e2e8f0; }
 
-    .model-3d {
-      flex: 2;
+    .project-info .meta strong {
+      color: #e2e8f0;
+    }
+
+    .pdf-viewer {
+      flex: 1;
       min-width: 300px;
       position: sticky;
       top: 120px;
       align-self: flex-start;
     }
 
-    model-viewer {
+    .pdf-viewer iframe {
       width: 100%;
-      height: 650px;
-      background: #0f172a;
-      border-radius: 16px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
-      --progress-bar-color: #60a5fa;
+      height: 800px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      background: #1e293b;
+      transition: transform 0.3s ease;
     }
 
-    /* Ocultar todos los controles y textos por defecto del visor */
-    model-viewer::part(default-progress-bar) { display: none; }
-    model-viewer::part(default-ar-button) { display: none; }
-
-    .model-controls {
-      text-align: center;
-      margin-top: 1rem;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .project-container { flex-direction: column; }
-      .model-3d { position: static; order: -1; }
-      model-viewer { height: 450px; }
+    @media (max-width: 992px) {
+      .project-container {
+        flex-direction: column;
+      }
+      .pdf-viewer {
+        position: static;
+      }
+      .pdf-viewer iframe {
+        height: 600px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER HEREDADO -->
+  <!-- HEADER HEREDADO exactamente igual que index.html -->
   <header>
     <nav>
       <div class="logo">Portafolio</div>
@@ -85,70 +88,190 @@
     </nav>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL DEL PROYECTO -->
   <div class="project-container">
 
+    <!-- COLUMNA IZQUIERDA: Información extensa -->
     <section class="project-info">
-      <h1>Edificio Inteligente – Torre Aurora</h1>
+      <h1>Plataforma de Gestión Empresarial – Banco del Pacífico</h1>
+
       <p>
-        Gemelo digital interactivo de un edificio corporativo de 28 pisos con datos en tiempo real de sensores IoT.
+        Desarrollo completo de una plataforma interna de gestión de créditos y riesgos para una de las entidades financieras más grandes de Ecuador.
+        Incluye dashboard en tiempo real, motor de scoring automatizado y módulo de firma electrónica avanzada. hola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+              holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+          holaholaholaholahola
+
       </p>
 
-      <h2 style="margin-top: 3rem; color: #60a5fa;">Características principales</h2>
+      <h2 style="margin-top: 3rem; color: #60a5fa;">Detalles del proyecto</h2>
       <p>
-        Modelo 3D de alta fidelidad conectado a más de 200 sensores. Permite inspeccionar planta por planta,
-        visualizar consumo energético, ocupación y mantenimiento predictivo.
+        La solución reemplazó un sistema legado de más de 15 años, reduciendo el tiempo de procesamiento de solicitudes de crédito en un 82% y eliminando errores humanos gracias a la automatización inteligente.
       </p>
 
       <div class="meta">
-        <strong>Cliente</strong>          <span>Aurora Properties</span>
-        <strong>Rol</strong>              <span>Lead Developer BIM + Full Stack</span>
-        <strong>Año</strong>              <span>2025</span>
-        <strong>Tecnologías</strong>      <span>React Three Fiber, Three.js, MQTT, InfluxDB</span>
+        <strong>Cliente</strong>        <span>Banco del Pacífico</span>
+        <strong>Rol</strong>            <span>Arquitecto Full Stack & Team Lead</span>
+        <strong>Año</strong>            <span>2024 – 2025</span>
+        <strong>Tecnologías</strong>    <span>React + TypeScript, Node.js, NestJS, PostgreSQL, Docker, Kubernetes, AWS</span>
+        <strong>Equipo</strong>         <span>12 desarrolladores + 3 diseñadores UX/UI</span>
+        <strong>Duración</strong>      <span>11 meses</span>
       </div>
 
-      <h2 style="margin-top: 3rem; color: #60a5fa;">Resultados</h2>
-      <ul style="color:#cbd5e1; line-height:2; margin-left:1.5rem;">
-        <li>−34 % consumo energético</li>
-        <li>Respuesta a incidencias: 12 minutos</li>
-        <li>Premio Nacional de Arquitectura Sostenible 2025</li>
+      <h2 style="margin-top: 3rem; color: #60a5fa;">Resultados alcanzados</h2>
+      <ul style="color: #cbd5e1; line-height: 2; margin-left: 1.5rem;">
+        <li>Reducción del 82 % en tiempos de aprobación de crédito</li>
+        <li>99,97 % de precisión en scoring automático</li>
+        <li>+45 000 usuarios activos mensuales</li>
+        <li>Certificación ISO 27001 obtenida gracias a la arquitectura de seguridad implementada</li>
       </ul>
     </section>
 
-    <!-- MODELO 3D 100% INTERACTIVO Y LIMPIO -->
-    <aside class="model-3d">
-      <model-viewer
-        src="proyecto2.glb"
-        alt="Torre Aurora - Modelo 3D interactivo"
-        camera-controls
-        touch-action="pan-y"
-        auto-rotate
-        rotation-per-second="15deg"
-        interaction-prompt="none"
-        shadow-intensity="1.5"
-        exposure="1"
-        environment-image="neutral"
-        skybox-image=""
-        loading="eager">
-
-        <!-- Estas líneas ocultan cualquier texto o botón interno -->
-        <button slot="ar-button" style="display:none"></button>
-      </model-viewer>
-
-      <div class="model-controls">
-        Gira • Zoom • Mueve la cámara<br>
-        <small>Haz clic y arrastra para explorar</small>
-      </div>
+    <!-- COLUMNA DERECHA: PDF interactivo -->
+    <aside class="pdf-viewer">
+      <iframe
+        src="proyecto1.pdf"
+        title="Documentación Proyecto 1"
+        allowfullscreen>
+      </iframe>
+      <p style="text-align:center; margin-top: 1rem; color: #64748b; font-size: 0.9rem;">
+        Si el PDF no carga, <a href="proyecto1.pdf" style="color:#60a5fa;">descárgalo aquí</a>.
+      </p>
     </aside>
 
   </div>
 
-  <!-- FOOTER HEREDADO -->
-  <footer>
-    <div class="footer-content">
-      <p>© 2025 ITB. Todos los derechos reservados.</p>
-      <p>Diseñado y desarrollado con precisión y elegancia</p>
-    </div>
-  </footer>
+  <!-- Botón flotante volver arriba -->
+<button id="scrollTopBtn"
+        style="position:fixed;top:140px;left:60px;
+               width:50px; height:50px;
+               border:none; border-radius:50%;
+               background:#60a5fa; color:#0f172a;
+               cursor:pointer; display:none; z-index:1000;
+               font-size:1.5rem; text-align:center; line-height:50px;">
+  ↑
+</button>
+
+
+
+
+  <!-- JS para PDF hover + botón volver arriba -->
+  <script>
+const scrollBtn = document.getElementById('scrollTopBtn');
+
+// Mostrar/ocultar botón según scroll
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+// Smooth scroll al hacer click
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Animación de rebote suave
+let direction = 1; // 1 = subir, -1 = bajar
+let position = 0; // desplazamiento actual
+
+function animateButton() {
+  if(scrollBtn.style.display === 'block'){ // solo animar si visible
+    position += direction * 0.5; // velocidad del rebote
+    if(position > 8 || position < 0) direction *= -1; // invertir dirección
+    scrollBtn.style.transform = `translateY(-${position}px)`;
+  } else {
+    scrollBtn.style.transform = 'translateY(0)';
+  }
+  requestAnimationFrame(animateButton);
+}
+
+animateButton();
+
+  </script>
 
 </body>
 </html>

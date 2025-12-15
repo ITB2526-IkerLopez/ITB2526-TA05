@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <nav>
       <div class="logo">Portafolio</div>
@@ -21,27 +22,52 @@
   </header>
 
   <main>
-    <!-- Proyecto 1 con enlace al detalle -->
-    <section class="hero">
-      <h1><a href="proyecto1.html" class="project-link">Proyecto 1</a></h1>
-      <p>Desarrollamos proyectos tecnológicos con precisión, diseño impecable y resultados medibles.</p>
-      <a href="proyecto1.html" class="btn">Ver proyecto →</a>
-    </section>
+    <!-- Proyecto 1 -->
+    <a href="proyecto1.html" class="section-link-wrapper">
+      <section class="project">
+        <h1 class="project-title">Proyecto 1</h1>
+        <p class="project-description">
+          Desarrollamos proyectos tecnológicos con precisión, diseño impecable y resultados medibles.
+        </p>
+      </section>
+    </a>
 
-    <!-- Proyecto 2 con enlace al detalle -->
-    <section class="services">
-      <h2><a href="proyecto2.html" class="project-link">Proyecto 2</a></h2>
-      <p>Consultoría estratégica, desarrollo web a medida, aplicaciones móviles, arquitectura cloud y transformación digital.</p>
-      <a href="proyecto2.html" class="btn">Ver proyecto →</a>
-    </section>
+    <!-- Proyecto 2 -->
+    <a href="proyecto2.html" class="section-link-wrapper">
+      <section class="project">
+        <h1 class="project-title">Proyecto 2</h1>
+        <p class="project-description">
+          Consultoría estratégica, desarrollo web a medida, aplicaciones móviles, arquitectura cloud y transformación digital.
+        </p>
+      </section>
+    </a>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-content">
       <p>© 2025 ITB. Todos los derechos reservados.</p>
       <p>Diseñado y desarrollado con precisión y elegancia</p>
     </div>
   </footer>
+
+<script>
+const sections = document.querySelectorAll('main section');
+
+sections.forEach(section => {
+  section.addEventListener('mouseenter', () => {
+    section.style.transition = 'transform 0.2s ease, box-shadow 0.2s ease';
+    section.style.transform = 'scale(1.08)';  // agrandamiento sutil
+    section.style.boxShadow = '0 40px 60px rgba(0,0,0,0.5), 0 0 30px rgba(96,165,250,0.4)';
+  });
+
+  section.addEventListener('mouseleave', () => {
+    section.style.transform = 'scale(1)';
+    section.style.boxShadow = '0 25px 50px rgba(0,0,0,0.4)';
+  });
+});
+</script>
+
 
 </body>
 </html>
