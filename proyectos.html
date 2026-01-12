@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio – Todos los Proyectos</title>
+  <title>Portafolio – Proyectos ASIRC</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* RESET BÁSICO (Por si index.css no carga) */
+    /* RESET BÁSICO */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
 
-    /* NAV (Estilo básico integrado) */
+    /* NAV */
     header { position: fixed; width: 100%; top: 0; background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(148, 163, 184, 0.1); }
     nav { max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; }
     .logo { font-size: 1.5rem; font-weight: 700; color: #60a5fa; }
     .nav-links a { margin-left: 2rem; text-decoration: none; color: #cbd5e1; transition: color 0.3s; }
     .nav-links a:hover { color: #60a5fa; }
 
-    /* ESTILOS ESPECÍFICOS DE LA PÁGINA DE PROYECTOS */
+    /* ESTILOS DE LA PÁGINA */
     .page-header {
       text-align: center;
       padding: 160px 2rem 4rem;
@@ -44,7 +44,7 @@
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Ajustado un poco para mejor responsividad */
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 3rem;
       max-width: 1300px;
       margin: 0 auto 8rem;
@@ -83,7 +83,7 @@
     .card-content {
       padding: 2rem;
       color: #cbd5e1;
-      flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+      flex-grow: 1;
     }
 
     .card-content h3 {
@@ -112,99 +112,99 @@
 
   <header>
     <nav>
-      <div class="logo">Portafolio</div>
+      <div class="logo">SysAdmin Portfolio</div>
       <div class="nav-links">
         <a href="index.html">Inicio</a>
         <a href="proyectos.html" style="color:#60a5fa">Proyectos</a>
-        <a href="formulario.html">Formulario</a>
+        <a href="formulario.html">Contacto</a>
       </div>
     </nav>
   </header>
 
   <div class="page-header">
-    <h1>Todos mis Proyectos</h1>
-    <p>Una colección completa de desarrollos en ingeniería de software, arquitectura digital, soluciones IoT y diseño de interfaces avanzadas.</p>
+    <h1>Administración de Sistemas y Ciberseguridad</h1>
+    <p>Despliegue de infraestructuras, hardening de servidores, automatización de redes y soluciones de alta disponibilidad.</p>
   </div>
 
   <main class="projects-grid">
 
     <a href="proyecto1.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" alt="Plataforma Banca">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="AWS Cloud">
       <div class="card-content">
-        <h3>Plataforma Fintech Core</h3>
-        <p>Sistema interno de créditos y riesgos para banca corporativa con scoring automático mediante IA y firma electrónica integrada.</p>
+        <h3>Infraestructura Híbrida AWS</h3>
+        <p>Arquitectura de alta disponibilidad con EC2, VPCs segmentadas y Balanceadores de Carga. Implementación de VPN Site-to-Site.</p>
       </div>
     </a>
 
     <a href="proyecto2.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=800" alt="Torre Aurora">
+      <img src="https://images.unsplash.com/photo-1558494949-ef526b004297?auto=format&fit=crop&q=80&w=800" alt="Active Directory">
       <div class="card-content">
-        <h3>Torre Aurora – Gemelo Digital</h3>
-        <p>Edificio inteligente de 28 pisos modelado en BIM, conectado a un dashboard web que monitorea +200 sensores IoT en tiempo real.</p>
+        <h3>Windows Server & Directorio Activo</h3>
+        <p>Gestión centralizada de dominios, implementación de GPOs complejas, WSUS para parches y scripts de Powershell para automatización.</p>
       </div>
     </a>
 
     <a href="proyecto3.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Dashboard Analítica">
+      <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800" alt="Seguridad de Red">
       <div class="card-content">
-        <h3>Dashboard de Analítica SaaS</h3>
-        <p>Panel de control administrativo para visualización de Big Data, permitiendo a empresas retail predecir stock y ventas futuras.</p>
+        <h3>Seguridad Perimetral pfSense</h3>
+        <p>Configuración de firewall avanzado, segmentación por VLANs, IDS/IPS con Suricata y filtrado de contenido DNS (pfBlockerNG).</p>
       </div>
     </a>
 
     <a href="proyecto4.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800" alt="App Móvil">
+      <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=800" alt="Linux Terminal">
       <div class="card-content">
-        <h3>EcoTrack Mobile App</h3>
-        <p>Aplicación cross-platform desarrollada en Flutter para el seguimiento de la huella de carbono personal y gamificación sostenible.</p>
+        <h3>Hardening de Servidores Linux</h3>
+        <p>Aseguramiento de servidores Ubuntu/Debian: configuración de SSH seguro, Fail2Ban, reglas iptables/UFW y auditoría con Lynis.</p>
       </div>
     </a>
 
     <a href="proyecto5.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800" alt="NFT Marketplace">
+      <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&q=80&w=800" alt="Servidores Rack">
       <div class="card-content">
-        <h3>Marketplace Web3 / NFT</h3>
-        <p>Plataforma descentralizada sobre la red Ethereum para la subasta de arte digital, con integración de wallets Metamask y contratos inteligentes.</p>
+        <h3>Cluster de Virtualización Proxmox</h3>
+        <p>Entorno de virtualización con Alta Disponibilidad (HA), almacenamiento compartido Ceph y backups automatizados a NAS externo.</p>
       </div>
     </a>
 
     <a href="proyecto6.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800" alt="Agro Tech">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800" alt="Docker Containers">
       <div class="card-content">
-        <h3>Sistema de Riego IoT</h3>
-        <p>Automatización agrícola utilizando microcontroladores ESP32 y protocolo LoRaWAN para optimizar el uso de agua en cultivos remotos.</p>
+        <h3>Despliegue de Contenedores Docker</h3>
+        <p>Orquestación de servicios mediante Docker Compose. Pila LAMP conteinerizada y gestión visual mediante Portainer.</p>
       </div>
     </a>
 
     <a href="proyecto7.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&q=80&w=800" alt="Ecommerce">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Monitoring Dashboard">
       <div class="card-content">
-        <h3>E-Commerce "NovaWear"</h3>
-        <p>Tienda online full-stack (MERN) con pasarela de pagos Stripe, gestión de inventario en tiempo real y panel de administración personalizado.</p>
+        <h3>Monitorización Zabbix & Grafana</h3>
+        <p>Sistema de monitorización en tiempo real para 50+ nodos. Dashboards personalizados y alertas automáticas vía Telegram y correo.</p>
       </div>
     </a>
 
     <a href="proyecto8.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" alt="MedTech">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Web Server Code">
       <div class="card-content">
-        <h3>Telemedicina "VitalLink"</h3>
-        <p>Plataforma web compatible con HIPAA para videoconsultas médicas encriptadas, gestión de recetas digitales e historial clínico.</p>
+        <h3>Servidor Web Nginx de Alto Rendimiento</h3>
+        <p>Configuración de Proxy Inverso, Balanceo de Carga, caché estática y certificados SSL automatizados con Let's Encrypt.</p>
       </div>
     </a>
 
     <a href="proyecto9.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?auto=format&fit=crop&q=80&w=800" alt="Cybersecurity">
+      <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800" alt="Hacker Code">
       <div class="card-content">
         <h3>Auditoría de Ciberseguridad</h3>
-        <p>Suite de scripts en Python para pentesting automatizado, diseñada para detectar vulnerabilidades en redes corporativas locales.</p>
+        <p>Pentesting ético en entorno controlado usando Kali Linux. Análisis de vulnerabilidades con Nessus y ataque de fuerza bruta con Hydra.</p>
       </div>
     </a>
 
     <a href="proyecto10.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800" alt="3D Portfolio">
+      <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="Secure Network">
       <div class="card-content">
-        <h3>Experiencia Web Inmersiva</h3>
-        <p>Sitio web experimental utilizando Three.js y WebGL para crear una navegación 3D interactiva premiada por su diseño UX/UI.</p>
+        <h3>Servidor VPN WireGuard</h3>
+        <p>Implementación de túnel VPN moderno y ligero para acceso remoto seguro de teletrabajadores a la intranet corporativa.</p>
       </div>
     </a>
 
@@ -212,11 +212,10 @@
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 ITB. Todos los derechos reservados.</p>
-      <p>Diseñado y desarrollado con precisión y elegancia</p>
+      <p>© 2025 ITB - ASIRC Portfolio.</p>
+      <p>Infraestructura, Redes y Seguridad Informática.</p>
     </div>
   </footer>
-  <!-- Botón flotante volver arriba -->
 <button id="scrollTopBtn"
         style="position:fixed;top:140px;left:60px;
                width:50px; height:50px;
@@ -226,12 +225,7 @@
                font-size:1.5rem; text-align:center; line-height:50px;">
   ↑
 </button>
-
-
-
-
-  <!-- JS para PDF hover + botón volver arriba -->
-  <script>
+ <script>
 const scrollBtn = document.getElementById('scrollTopBtn');
 
 // Mostrar/ocultar botón según scroll
@@ -262,6 +256,5 @@ function animateButton() {
 animateButton();
 
   </script>
-
 </body>
 </html>
