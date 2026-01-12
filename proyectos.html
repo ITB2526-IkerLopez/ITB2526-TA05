@@ -216,6 +216,52 @@
       <p>Diseñado y desarrollado con precisión y elegancia</p>
     </div>
   </footer>
+  <!-- Botón flotante volver arriba -->
+<button id="scrollTopBtn"
+        style="position:fixed;top:140px;left:60px;
+               width:50px; height:50px;
+               border:none; border-radius:50%;
+               background:#60a5fa; color:#0f172a;
+               cursor:pointer; display:none; z-index:1000;
+               font-size:1.5rem; text-align:center; line-height:50px;">
+  ↑
+</button>
+
+
+
+
+  <!-- JS para PDF hover + botón volver arriba -->
+  <script>
+const scrollBtn = document.getElementById('scrollTopBtn');
+
+// Mostrar/ocultar botón según scroll
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+// Smooth scroll al hacer click
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Animación de rebote suave
+let direction = 1; // 1 = subir, -1 = bajar
+let position = 0; // desplazamiento actual
+
+function animateButton() {
+  if(scrollBtn.style.display === 'block'){ // solo animar si visible
+    position += direction * 0.5; // velocidad del rebote
+    if(position > 8 || position < 0) direction *= -1; // invertir dirección
+    scrollBtn.style.transform = `translateY(-${position}px)`;
+  } else {
+    scrollBtn.style.transform = 'translateY(0)';
+  }
+  requestAnimationFrame(animateButton);
+}
+
+animateButton();
+
+  </script>
 
 </body>
 </html>
