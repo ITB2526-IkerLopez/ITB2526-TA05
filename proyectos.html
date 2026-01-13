@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio – Proyectos ASIRC</title>
+  <title>Portafolio – Iker López</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -69,6 +69,20 @@
       border-color: rgba(96, 165, 250, 0.4);
     }
 
+    /* CLASE PARA PROYECTOS NO DISPONIBLES */
+    .project-card.disabled {
+      filter: grayscale(100%);
+      opacity: 0.4;
+      pointer-events: none; /* Desactiva el click */
+      cursor: default;
+    }
+
+    .project-card.disabled:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    /* FIN CLASE PROYECTOS NO DISPONIBLES */
+
     .project-card img {
       width: 100%;
       height: 260px;
@@ -112,11 +126,11 @@
 
   <header>
     <nav>
-      <div class="logo">SysAdmin Portfolio</div>
+      <div class="logo">Portafolio Iker López</div>
       <div class="nav-links">
         <a href="index.html">Inicio</a>
         <a href="proyectos.html" style="color:#60a5fa">Proyectos</a>
-        <a href="formulario.html">Contacto</a>
+        <a href="formulario.html">Formulario</a>
       </div>
     </nav>
   </header>
@@ -129,22 +143,22 @@
   <main class="projects-grid">
 
     <a href="proyecto1.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="AWS Cloud">
+      <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?auto=format&fit=crop&q=80&w=800" alt="Datacenter Server Rack">
       <div class="card-content">
-        <h3>Infraestructura Híbrida AWS</h3>
-        <p>Arquitectura de alta disponibilidad con EC2, VPCs segmentadas y Balanceadores de Carga. Implementación de VPN Site-to-Site.</p>
+        <h3>Infraestructura Windows Server</h3>
+        <p>Migración a dominio Active Directory, automatización con PowerShell, GPOs de seguridad y almacenamiento redundante RAID para TechSolutions.</p>
       </div>
     </a>
 
     <a href="proyecto2.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1558494949-ef526b004297?auto=format&fit=crop&q=80&w=800" alt="Active Directory">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Code and Monitoring">
       <div class="card-content">
-        <h3>Windows Server & Directorio Activo</h3>
-        <p>Gestión centralizada de dominios, implementación de GPOs complejas, WSUS para parches y scripts de Powershell para automatización.</p>
+        <h3>Monitorización Linux & Docker</h3>
+        <p>Sistema "Ulls que tot ho veuen": Zabbix y Grafana orquestados con Docker para control de carga en tiempo real y alertas automáticas.</p>
       </div>
     </a>
 
-    <a href="proyecto3.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800" alt="Seguridad de Red">
       <div class="card-content">
         <h3>Seguridad Perimetral pfSense</h3>
@@ -152,7 +166,7 @@
       </div>
     </a>
 
-    <a href="proyecto4.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=800" alt="Linux Terminal">
       <div class="card-content">
         <h3>Hardening de Servidores Linux</h3>
@@ -160,7 +174,7 @@
       </div>
     </a>
 
-    <a href="proyecto5.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&q=80&w=800" alt="Servidores Rack">
       <div class="card-content">
         <h3>Cluster de Virtualización Proxmox</h3>
@@ -168,7 +182,7 @@
       </div>
     </a>
 
-    <a href="proyecto6.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800" alt="Docker Containers">
       <div class="card-content">
         <h3>Despliegue de Contenedores Docker</h3>
@@ -176,15 +190,15 @@
       </div>
     </a>
 
-    <a href="proyecto7.html" class="project-card">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Monitoring Dashboard">
+    <a href="#" class="project-card disabled">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="AWS Cloud">
       <div class="card-content">
-        <h3>Monitorización Zabbix & Grafana</h3>
-        <p>Sistema de monitorización en tiempo real para 50+ nodos. Dashboards personalizados y alertas automáticas vía Telegram y correo.</p>
+        <h3>Infraestructura Híbrida AWS</h3>
+        <p>Arquitectura de alta disponibilidad con EC2, VPCs segmentadas y Balanceadores de Carga. Implementación de VPN Site-to-Site.</p>
       </div>
     </a>
 
-    <a href="proyecto8.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Web Server Code">
       <div class="card-content">
         <h3>Servidor Web Nginx de Alto Rendimiento</h3>
@@ -192,7 +206,7 @@
       </div>
     </a>
 
-    <a href="proyecto9.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800" alt="Hacker Code">
       <div class="card-content">
         <h3>Auditoría de Ciberseguridad</h3>
@@ -200,7 +214,7 @@
       </div>
     </a>
 
-    <a href="proyecto10.html" class="project-card">
+    <a href="#" class="project-card disabled">
       <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="Secure Network">
       <div class="card-content">
         <h3>Servidor VPN WireGuard</h3>

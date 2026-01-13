@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto 2 – Iker López</title>
+  <title>Proyecto 2 Iker López</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -76,10 +76,9 @@
 </head>
 <body>
 
-  <!-- HEADER HEREDADO exactamente igual que index.html -->
   <header>
     <nav>
-      <div class="logo">Portafolio</div>
+      <div class="logo">Portafolio Iker López</div>
       <div class="nav-links">
         <a href="index.html">Inicio</a>
         <a href="proyectos.html">Proyectos</a>
@@ -88,139 +87,48 @@
     </nav>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL DEL PROYECTO -->
   <div class="project-container">
 
-    <!-- COLUMNA IZQUIERDA: Información extensa -->
     <section class="project-info">
-      <h1>Plataforma de Gestión Empresarial – Banco del Pacífico</h1>
+      <h1>Monitorización con Linux y Docker</h1>
 
       <p>
-        Desarrollo completo de una plataforma interna de gestión de créditos y riesgos para una de las entidades financieras más grandes de Ecuador.
-        Incluye dashboard en tiempo real, motor de scoring automatizado y módulo de firma electrónica avanzada. hola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-              holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-          holaholaholaholahola
-
+        Implementación de un sistema integral de monitorización ("Ulls que tot ho veuen") basado en software libre. El proyecto utiliza <strong>Docker</strong> para contenerizar servicios y orquestar una solución escalable sobre <strong>Ubuntu Server 22.04 LTS</strong>.
+        <br><br>
+        El núcleo del sistema es <strong>Zabbix</strong> para la recolección de métricas y alertas en tiempo real, integrado con <strong>Grafana</strong> para la visualización de datos mediante dashboards interactivos. El objetivo principal fue asegurar la disponibilidad de los servicios y permitir una respuesta proactiva ante incidentes.
       </p>
 
       <h2 style="margin-top: 3rem; color: #60a5fa;">Detalles del proyecto</h2>
       <p>
-        La solución reemplazó un sistema legado de más de 15 años, reduciendo el tiempo de procesamiento de solicitudes de crédito en un 82% y eliminando errores humanos gracias a la automatización inteligente.
+        Se desplegaron agentes Zabbix en los clientes para monitorizar CPU, RAM y red. Se realizaron pruebas de estrés ("Stress-ng") simulando cargas del 100% de CPU, verificando que el sistema detectaba la anomalía en menos de 10 segundos, enviaba alertas por correo y marcaba el problema como resuelto automáticamente al finalizar la carga.
       </p>
 
       <div class="meta">
-        <strong>Cliente</strong>        <span>Banco del Pacífico</span>
-        <strong>Rol</strong>            <span>Arquitecto Full Stack & Team Lead</span>
-        <strong>Año</strong>            <span>2024 – 2025</span>
-        <strong>Tecnologías</strong>    <span>React + TypeScript, Node.js, NestJS, PostgreSQL, Docker, Kubernetes, AWS</span>
-        <strong>Equipo</strong>         <span>12 desarrolladores + 3 diseñadores UX/UI</span>
-        <strong>Duración</strong>      <span>11 meses</span>
+        <strong>Proyecto</strong>       <span>Sistemas de Monitorización</span>
+        <strong>Rol</strong>            <span>DevOps Engineer</span>
+        <strong>Año</strong>            <span>2025</span>
+        <strong>Stack Tecnológico</strong>    <span>Ubuntu Server, Docker, Docker Compose, Zabbix, Grafana</span>
+        <strong>Herramientas</strong>   <span>Stress-ng (Pruebas de carga), Agentes Zabbix</span>
+        <strong>Base de Datos</strong>  <span>MySQL (Backend de Zabbix)</span>
       </div>
 
       <h2 style="margin-top: 3rem; color: #60a5fa;">Resultados alcanzados</h2>
       <ul style="color: #cbd5e1; line-height: 2; margin-left: 1.5rem;">
-        <li>Reducción del 82 % en tiempos de aprobación de crédito</li>
-        <li>99,97 % de precisión en scoring automático</li>
-        <li>+45 000 usuarios activos mensuales</li>
-        <li>Certificación ISO 27001 obtenida gracias a la arquitectura de seguridad implementada</li>
+        <li>Detección de "High CPU Load" en menos de 10 segundos</li>
+        <li>Visualización gráfica unificada en Grafana</li>
+        <li>Alertas automatizadas vía correo electrónico</li>
+        <li>Despliegue modular y portable gracias a Docker Compose</li>
       </ul>
     </section>
 
-    <!-- COLUMNA DERECHA: PDF interactivo -->
     <aside class="pdf-viewer">
       <iframe
-        src="proyecto1.pdf"
-        title="Documentación Proyecto 1"
+        src="proyecto2.pdf"
+        title="Documentación Proyecto 2"
         allowfullscreen>
       </iframe>
       <p style="text-align:center; margin-top: 1rem; color: #64748b; font-size: 0.9rem;">
-        Si el PDF no carga, <a href="proyecto1.pdf" style="color:#60a5fa;">descárgalo aquí</a>.
+        Si el PDF no carga, <a href="proyecto2.pdf" style="color:#60a5fa;">descárgalo aquí</a>.
       </p>
     </aside>
 
@@ -232,8 +140,7 @@
       <p>Diseñado y desarrollado con precisión y elegancia</p>
     </div>
   </footer>
-  <!-- Botón flotante volver arriba -->
-<button id="scrollTopBtn"
+  <button id="scrollTopBtn"
         style="position:fixed;top:140px;left:60px;
                width:50px; height:50px;
                border:none; border-radius:50%;
@@ -243,10 +150,6 @@
   ↑
 </button>
 
-
-
-
-  <!-- JS para PDF hover + botón volver arriba -->
   <script>
 const scrollBtn = document.getElementById('scrollTopBtn');
 
